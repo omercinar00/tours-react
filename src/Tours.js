@@ -1,8 +1,18 @@
 import React from 'react';
 import Tour from './Tour';
 const Tours = ({ data, setData }) => {
-  
-  return <h2>tours component</h2>;
+
+  return (
+  <div>
+    
+    {data.map((item)=>{
+      return(
+          <Tour key={item.id} item={item} />
+      )
+    })} 
+    
+  </div>
+  )
 };
 
 export default Tours;
