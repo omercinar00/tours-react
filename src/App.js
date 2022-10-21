@@ -60,6 +60,7 @@ function App() {
   // console.log(data)
   return (
     <div>
+      <h1>OUR TOURS</h1>
       <Tours data={data} deleteTour={deleteTour} />
     </div>
   );
